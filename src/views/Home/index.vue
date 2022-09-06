@@ -1,15 +1,12 @@
 <template>
 	<div>
-		Home
+		<p>Home</p>
+		<p>首页页面</p>
 	</div>
 </template>
 
-<script>
-export default {
-	name: "Home"
+<style scoped>
+p {
+	width: 100px;
 }
-</script>
-
-<style lang="scss" scoped>
-
 </style>
