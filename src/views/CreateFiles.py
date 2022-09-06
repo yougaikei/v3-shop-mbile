@@ -4,7 +4,7 @@ import os
 # oFileNames: 需要创建的文件夹名列表
 oFileNames = ['Home', 'Category', 'CategoryDetail',
               'Recommentd', 'Login', 'Cart',
-              'User', 'Order', 'OrderConfirm',
+              'User', 'Order', 'OrderConfirm', 'OrderDetail',
               'Pay', 'Product', 'Search', 'NotFound']
 
 # 创建文件夹, 并创建 index.vue 文件
