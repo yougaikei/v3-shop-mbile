@@ -1,13 +1,14 @@
 <template>
 	<div>
-		<p>Home</p>
+		<p class="boxs">Home</p>
 		<p>首页页面</p>
-		<van-button>确认</van-button>
+		<footerVue />
 	</div>
 </template>
 
-<style scoped>
-p {
-	width: 100px;
-}
+<script setup>
+	import footerVue from '@/components/footer.vue';
+</script>
+
+<style lang="scss" scoped>
 </style>

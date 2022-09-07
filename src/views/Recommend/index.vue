@@ -1,12 +1,13 @@
 <template>
 	<div>
-		<p>Cart</p>
-		<p>购物车页面</p>
+		<p>Recommend</p>
+		<p>推荐页面</p>
 		<footerVue />
 	</div>
 </template>
 
 <script setup>
+// 引入组件 footerVue
 import footerVue from '@/components/footer.vue';
 </script>
 

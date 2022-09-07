@@ -3,7 +3,7 @@ import os
 
 # oFileNames: 需要创建的文件夹名列表
 oFileNames = ['Home', 'Category', 'CategoryDetail',
-              'Recommentd', 'Login', 'Cart',
+              'Recommend', 'Login', 'Cart',
               'User', 'Order', 'OrderConfirm', 'OrderDetail',
               'Pay', 'Product', 'Search', 'NotFound']
 
@@ -15,7 +15,7 @@ for oFileName in oFileNames:
         os.mkdir(oFileName)
         # 创建 index.vue 文件
         with open(oFileName + '/index.vue', 'w') as f:
-            f.write('<template>\n\t<div>\n\t\t' + oFileName + '\n\t</div>\n</template>\n\n<script>\nexport default {\n\tname: "' + oFileName + '"\n}\n</script>\n\n<style lang="scss" scoped>\n\n</style>\n')
+            f.write('<template>\n\t<div>\n\t\t<p>' + oFileName + '</p>\n\t</div>\n</template>\n\n<script>\nexport default {\n\tname: "' + oFileName + '"\n}\n</script>\n\n<style lang="scss" scoped>\n\n</style>\n')
             f.close()
     else:
         # 判断 index.vue 文件内容是否为空

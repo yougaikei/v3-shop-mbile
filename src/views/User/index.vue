@@ -1,13 +1,14 @@
 <template>
 	<div>
-		User
+		<p>User</p>
+		<p>用户页</p>
+		<footerVue />
 	</div>
 </template>
 
-<script>
-export default {
-	name: "User"
-}
+<script setup>
+// footer
+import footerVue from '@/components/Footer.vue'
 </script>
 
 <style lang="scss" scoped>

@@ -1,13 +1,14 @@
 <template>
 	<div>
-		Category
+		<p>Category</p>
+		<p>分类推荐页</p>
+		<FooterVue />
 	</div>
 </template>
 
-<script>
-export default {
-	name: "Category"
-}
+<script setup>
+import FooterVue from '@/components/footer.vue';
+
 </script>
 
 <style lang="scss" scoped>
