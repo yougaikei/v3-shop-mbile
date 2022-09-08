@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-    import Logo from '@/assets/vue.svg';
+    import Logo from '@/assets/logo.png';
 </script>
 
 <style lang="scss" scoped>
@@ -28,6 +28,7 @@
     background-color: #fff;
     padding-right: 10px;
     box-sizing: border-box;
+    z-index: 999;
 
     // Logo
     img {
@@ -36,9 +37,12 @@
 
     // 搜索区域
     .home-search{
+        display: flex;
+        align-items: center;
         width: 100%;
+        height: 30px;
         background-color: #f7f7f7;
-        border-radius: 10px;
+        border-radius: 25px;
         padding-left: 12px;
         margin-right: 10px;
     }

@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import FooterVue from '@/components/footer.vue';
+import FooterVue from '@/components/Footer.vue';
 
 </script>
 

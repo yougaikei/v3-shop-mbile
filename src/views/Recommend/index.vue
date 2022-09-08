@@ -8,7 +8,7 @@
 
 <script setup>
 // 引入组件 footerVue
-import footerVue from '@/components/footer.vue';
+import footerVue from '@/components/Footer.vue';
 </script>
 
 <style lang="scss" scoped>

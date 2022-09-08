@@ -15,7 +15,7 @@
 	// 引入主体
 	import MainVue from './components/Main.vue';
 	// 引入固定底部
-	import FooterVue from '@/components/footer.vue';
+	import FooterVue from '@/components/Footer.vue';
 </script>
 
 <style lang="scss" scoped>
