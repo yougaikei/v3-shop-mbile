@@ -705,9 +705,88 @@ legend {
 <style lang="scss" scoped>
 
 </style>
+
 ```
 
 ---
 
 ## 11. 公共组件 ( 顶部组件 )
+
+- 在 ./src/views/Home 创建 components 组件文件夹, 再在文件夹内部创建两个 Vue 文件, 分别是: Header.vue [ 头部文件 ]、Main.vue [  ]
+
+```vue
+// ./src/views/Home/components/Header.vue
+<template>
+    <div class="home-nav">
+        <!-- Logo 区域 -->
+        <img :src='Logo' alt="Logo" height="20">
+        <!-- 搜索区域 -->
+        <div class="home-search">
+            <van-icon name="search" size="0.5rem" />
+        </div>
+        <!-- 分类跳转 -->
+        <van-icon name="wap-nav" />
+    </div>
+</template>
+
+<script setup>
+    import Logo from '@/assets/vue.svg';
+</script>
+
+<style lang="scss" scoped>
+// 主体部分
+.home-nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    padding-right: 10px;
+    box-sizing: border-box;
+
+    // Logo
+    img {
+        margin: 0 10px;
+    }
+
+    // 搜索区域
+    .home-search{
+        width: 100%;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        padding-left: 12px;
+        margin-right: 10px;
+    }
+}
+</style>
+
+```
+
+※ 注意: 做完以上内容别忘记在 .../Home/index.vue 中链入当前文件
+
+```vue
+<template>
+		<!-- 公共顶部 -->
+		<HeaderVue />
+
+		<!-- 主体部分 -->
+
+		<!-- 公共底部 -->
+		<FooterVue />
+</template>
+
+<script setup>
+	import FooterVue from '@/components/footer.vue';
+	import HeaderVue from './components/Header.vue';
+</script>
+
+<style lang="scss" scoped>
+</style>
+
+```
+
+
 
